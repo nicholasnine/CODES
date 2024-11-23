@@ -34,12 +34,12 @@
     <p>Hello! I am <b>Nicholas A Nyberg</b>.</p>
     <p>I am building a portfolio page. Click on something you find interesting to see more information. Here are some photos:</p>
     
-    <img src="photo1.jpg" alt="Photo 1">
-    <img src="photo2.jpg" alt="Photo 2">
-    <img src="photo3.jpg" alt="Photo 3">
-    <img src="photo4.jpg" alt="Photo 4">
-    <img src="photo5.jpg" alt="Photo 5">
-    <img src="photo6.jpg" alt="Photo 6">
+    <img src="nicholas.a.nyberg1.jpg" alt="Photo 1">
+    <img src="nicholas.a.nyberg2.jpg" alt="Photo 2">
+    <img src="nicholas.a.nyberg3.jpg" alt="Photo 3">
+    <img src="nicholas.a.nyberg4.jpg" alt="Photo 4">
+    <img src="nicholas.a.nyberg5.jpg" alt="Photo 5">
+    <img src="nicholas.a.nyberg6.jpg" alt="Photo 6">
     <img src="photo7.jpg" alt="Photo 7">
     <img src="photo8.jpg" alt="Photo 8">
     <img src="photo9.jpg" alt="Photo 9">
@@ -48,6 +48,7 @@
     <img src="photo12.jpg" alt="photo 12">
 
     <button onclick="alert('Welcome! This site is under construction.')">Info</button>
+    
     
     <button id="clickMeButton">Precision Vase</button>
 
@@ -58,6 +59,57 @@
         window.open(photoUrl, 'PhotoPopup', popupOptions);
     });
 </script>
+
+<button class="clickMeButton">Click Me</button>
+
+<style>
+    .clickMeButton {
+        background-color: #000000; /* Button background color */
+        color: rgb(54, 149, 6);             /* Text color */
+        border: none;             /* Remove border */
+        padding: 2px 5px;       /* Add some padding */
+        font-size: 18px;          /* Increase text size */
+        border-radius: 5px;       /* Rounded corners */
+        cursor: pointer;          /* Pointer cursor on hover */
+    }
+
+    .clickMeButton:hover {
+        background-color: #1f8308; /* Change color on hover */
+    }
+</style>
+
+<script>
+    document.querySelector('.clickMeButton').addEventListener('click', function () {
+        alert('Button clicked!'); // Replace with your desired action
+    });
+</script>
+
+<button id="clickMeButton1">Click Me 1</button>
+<button id="clickMeButton2">Click Me 2</button>
+
+<style>
+    #clickMeButton1 {
+        background-color: #000000;
+        color: rgb(3, 142, 5);
+    }
+
+    #clickMeButton2 {
+        background-color: #000000;
+        color: rgb(3, 142, 5);
+    }
+
+</style>
+
+<script>
+    document.getElementById('clickMeButton1').addEventListener('click', function () {
+        alert('Button 1 clicked!');
+    });
+
+    document.getElementById('clickMeButton2').addEventListener('click', function () {
+        alert('Button 2 clicked!');
+    });
+</script>
+
 
     <footer>
         <p>Code written by <b>Nicholas A Nyberg</b> &copy; 2024</p>
