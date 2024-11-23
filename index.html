@@ -49,6 +49,16 @@
 
     <button onclick="alert('Welcome! This site is under construction.')">Info</button>
     
+    <button id="clickMeButton">Precision Vase</button>
+
+<script>
+    document.getElementById('clickMeButton').addEventListener('click', function () {
+        const photoUrl = 'precisevaseofgranite.jpg'; // Replace with the actual photo URL
+        const popupOptions = 'width=800,height=600,scrollbars=no,resizable=yes';
+        window.open(photoUrl, 'PhotoPopup', popupOptions);
+    });
+</script>
+
     <footer>
         <p>Code written by <b>Nicholas A Nyberg</b> &copy; 2024</p>
     </footer>
