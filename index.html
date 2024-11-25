@@ -30,10 +30,45 @@
     </style>
 </head>
 <body>
+    
     <h1>Nicholas A Nyberg</h1>
     <p>Hello! I am <b>Nicholas A Nyberg</b>.</p>
     <p>I am building a portfolio page. Click on something you find interesting to see more information. Here are some photos:</p>
     
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Portfolio</title>
+    
+        <!-- Inline CSS for Video Styling -->
+        <style>
+            /* Basic styling for the video */
+            video {
+                width: 80%;          /* Video width is 80% of its container */
+                max-width: 800px;    /* Max width of the video */
+                height: auto;        /* Maintain aspect ratio */
+                display: block;      /* Remove extra space below video */
+                margin: 20px auto;   /* Center the video with margin */
+            }
+    
+            /* Optional: Style the section title */
+            #video-section h2 {
+                text-align: center;  /* Center the title */
+                font-size: 1.5rem;    /* Adjust font size */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Video Section -->
+        <section id="video-section">
+    
+            <video controls autoplay loop muted>
+                <source src="flag.mp4" type="video/mp4">
+            </video>
+        </section>
+    
+
     <img src="nicholas.a.nyberg1.jpg" alt="Photo 1">
     <img src="nicholas.a.nyberg2.jpg" alt="Photo 2">
     <img src="nicholas.a.nyberg3.jpg" alt="Photo 3">
@@ -47,6 +82,8 @@
     <img src="photo11.jpg" alt="Photo 11">
     <img src="photo12.jpg" alt="photo 12">
 
+    <div style="display: flex; justify-content: center; align-items: center; height: 20vh;"></div>
+   
     <button onclick="alert('Welcome! This site is under construction.')">Info</button>
     
     
