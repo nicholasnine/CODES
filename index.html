@@ -64,7 +64,7 @@
         <section id="video-section">
     
             <video controls autoplay loop muted>
-                <source src="Flag.mp4" type="video/mp4">
+                <source src="flag.mp4" type="video/mp4">
             </video>
         </section>
     
@@ -75,7 +75,7 @@
     <img src="nicholas.a.nyberg4.jpg" alt="Photo 4">
     <img src="nicholas.a.nyberg5.jpg" alt="Photo 5">
     <img src="nicholas.a.nyberg6.jpg" alt="Photo 6">
-    <img src="photo7.jpg" alt="Photo 7">
+    <img src="zurmataphganistan.png" alt="Photo 7">
     <img src="photo8.jpg" alt="Photo 8">
     <img src="photo9.jpg" alt="Photo 9">
     <img src="photo10.jpg" alt="Photo 10">
@@ -85,8 +85,7 @@
     <div style="display: flex; justify-content: center; align-items: center; height: 20vh;"></div>
    
     <button onclick="alert('Welcome! This site is under construction.')">Info</button>
-    
-    
+    <button onclick="alert('Buttons are being built for interaction.')" >Interactive</button>
     <button id="clickMeButton">Precision Vase</button>
 
 <script>
@@ -111,7 +110,7 @@
     }
 
     .clickMeButton:hover {
-        background-color: #1f8308; /* Change color on hover */
+        background-color: rgba(0, 118, 12, 0); /* Change color on hover */
     }
 </style>
 
@@ -136,7 +135,6 @@
     }
 
 </style>
-
 <script>
     document.getElementById('clickMeButton0').addEventListener('click', function () {
         alert('Button 0 clicked!');
@@ -146,35 +144,79 @@
         alert('Button 1 clicked!');
     });
 </script>
-
-
-    <footer>
-        <p>Code written by <b>Nicholas A Nyberg</b> &copy; 2024</p>
-    </footer>
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        pre {
-            font-family: monospace;
-            white-space: pre-wrap; /* Makes sure the pyramid text wraps correctly */
-        }
-    </style>
+    <title>Resume Link</title>
 </head>
 <body>
+    <a href="Nicholas Nyberg" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: rgb(4, 134, 10); background-color: #000000; text-decoration: none; border-radius: 5px; text-align: center;">
+        Employ Me
+    </a>
+    <a href="Nicholas Nyberg" target="_blank">Potential Employers</a>
 
-    <div>
-        <!-- Your portfolio content goes here -->
-    </div>
+    <a href="Nicholas Nyberg" class="resume-button" target="_blank">View My Résumé</a>
+    
+    .resume-button {
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 0 0 rgba(0, 123, 255, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+    }
+    Full Button Example
+    <a href="your-resume.pdf" class="resume-button" target="_blank">View My Résumé</a>
+    
+    <style>
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(45deg, #007BFF, #00C6FF);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    
+        .resume-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <a href="Nicholas Nyberg.docx" class="resume-button" onclick="openResumePopup(event)">Employer's Window</a>
+
+    <script>
+        function openResumePopup(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const popupWidth = 800;
+            const popupHeight = 600;
+            const popupLeft = (window.innerWidth - popupWidth) / 2;
+            const popupTop = (window.innerHeight - popupHeight) / 2;
+    
+            window.open(
+                'your-resume.pdf', 
+                'ResumePopup', 
+                `width=${popupWidth},height=${popupHeight},left=${popupLeft},top=${popupTop},resizable,scrollbars`
+            );
+        }
+    </script>
+
+
+</body>
+
+</html>
 
     <footer>
         <h2>foundational text art</h2>
@@ -194,9 +236,6 @@
         }
 
         // Example usage:
-        const height = 25; // You can change the height here
+        const height = 24; // You can change the height here
         document.getElementById("pyramid-output").textContent = drawPyramid(height);
     </script>
-
-</body>
-</html>
